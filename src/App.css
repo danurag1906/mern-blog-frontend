@@ -1,38 +1,122 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+main{
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+img{
+  max-width: 100%;
+}
+header{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+header a{
+  text-decoration: none;
+  color:inherit;
+}
+
+header a.logo{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header nav{
+  display: flex;
+  gap: 2rem;
+}
+
+.post{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+.post .texts  h2{
+  margin: 0px;
+
+}
+
+.post .texts a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .post p{
+  margin-top: 0rem;
+} */
+
+.post .info a{
+  text-decoration: none;
+  color: black;
+  margin-right: 0.5rem;
+  /* font-weight: bold;
+  font-size: 0.9rem; */
+}
+
+.post .info time{
+  font-size: 0.9rem;
+}
+
+
+form.login, form.register{
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input{
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button{
+  width: 100%;
+  display: block;
+  padding: 0.5rem;
+}
+
+form.login h2, form.register h2{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.post-page h1{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-page time{
+  text-align: center;
+  display: block;
+  font-size: 0.8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post-page .author{
+  text-align: center;
+  font-weight: 500;
+}
+
+.post-page .image{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-row{
+  text-align: center;
+  margin: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-btn{
+  background-color: #333;
+  color:#fff;
+  padding: 0.4rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
 }
