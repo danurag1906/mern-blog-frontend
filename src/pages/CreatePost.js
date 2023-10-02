@@ -43,6 +43,7 @@ const CreatePost = () => {
         const response=await fetch(`${base_url}/post`,{
             method:'POST',
             body:data,
+            // enctype:'multipart/form-data',
             credentials:'include',
         })
         if(response.ok){
@@ -69,7 +70,7 @@ const CreatePost = () => {
         value={summary}
         onChange={e=>setSummary(e.target.value)}
          />
-        <input type="file" placeholder='Upload image' onChange={e=>setFiles(e.target.files)} />
+        <input type="file" name='files' placeholder='Upload image' onChange={e=>setFiles(e.target.files)} />
         <ReactQuill value={content} 
         modules={modules} 
         formats={formats}

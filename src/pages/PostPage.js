@@ -34,7 +34,11 @@ const PostPage = () => {
         }
     }
 
-    if(!postInfo) return '';
+    if(!postInfo) return (
+        <>
+            <div className='loading' >Loading...</div>
+        </>
+    );
 
     if(redirect){
         alert('Post deleted successfully!')

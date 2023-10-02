@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <header>
       <p>Welcome {username}</p>
-    <Link to="/" className="logo">Laddu's Blog</Link>
+    <Link to="/" className="logo">Anurag's Blog</Link>
     <nav>
       {username && (
         <>

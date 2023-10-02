@@ -32,7 +32,7 @@ const LoginPage = () => {
       })
     }
     else{
-      alert('wrong credentials')
+      alert('Wrong credentials . Or user not registered.')
     }
   }
 

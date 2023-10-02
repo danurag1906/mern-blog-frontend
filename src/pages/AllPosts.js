@@ -17,8 +17,17 @@ const AllPosts = () => {
     })
   },[])
 
+  if(posts.length===0){
+    return(
+      <>
+        <div className="loading" >Loading...</div>
+      </>
+    )
+  }
+
   return (
     <>
+    
     {/* we are passing post as props to <Post/> and then displaying the data */}
       {posts.length>0 && posts.map(post=>(
         <Post key={post._id} {...post} />
