@@ -39,11 +39,11 @@ const Header = () => {
     window.location.reload(true)
   }
 
-  const username=userInfo?.username //check if userInfo is not null
+  // const username=userInfo?.username //check if userInfo is not null
 
   return (
     <header>
-      <p>Welcome {username}</p>
+      {/* <p>Welcome {username}</p> */}
     <Link to="/" className="logo">Anurag's Blog</Link>
     <nav>
       {username && (
