@@ -35,27 +35,25 @@ const Header = () => {
   }
 
   //if logged out reload the page.
-  // if(!userInfo){
-  //   window.location.reload(true)
-  // }
+  if(!userInfo){
+    window.location.reload(true)
+  }
 
-  // const username=userInfo?.username //check if userInfo is not null
+  const username=userInfo?.username //check if userInfo is not null
 
   return (
     <header>
-      {/* <p>Welcome {username}</p> */}
+      <p>Welcome {username}</p>
     <Link to="/" className="logo">Anurag's Blog</Link>
     <nav>
-      {/* {username && ( */}
-      {(
+      {username && (
         <>
           
           <Link to='/create' >Create new post</Link>
           <Link onClick={logout} >Logout</Link>
         </>
       )}
-      {/* {!username && ( */}
-      {(
+      {!username && (
         <>
           <Link to="login">Login</Link>
           <Link to="register">Register</Link>
