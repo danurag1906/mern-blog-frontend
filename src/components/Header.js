@@ -46,14 +46,16 @@ const Header = () => {
       {/* <p>Welcome {username}</p> */}
     <Link to="/" className="logo">Anurag's Blog</Link>
     <nav>
-      {username && (
+      {/* {username && ( */}
+      {(
         <>
           
           <Link to='/create' >Create new post</Link>
           <Link onClick={logout} >Logout</Link>
         </>
       )}
-      {!username && (
+      {/* {!username && ( */}
+      {(
         <>
           <Link to="login">Login</Link>
           <Link to="register">Register</Link>
