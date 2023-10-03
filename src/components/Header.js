@@ -35,9 +35,9 @@ const Header = () => {
   }
 
   //if logged out reload the page.
-  if(!userInfo){
-    window.location.reload(true)
-  }
+  // if(!userInfo){
+  //   window.location.reload(true)
+  // }
 
   // const username=userInfo?.username //check if userInfo is not null
 
