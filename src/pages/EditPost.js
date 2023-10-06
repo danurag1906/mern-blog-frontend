@@ -61,7 +61,7 @@ const EditPost = () => {
         const response=await fetch(`${base_url}/post`,{
             method:'PUT',
             body:data,
-            // credentials:'include',
+            credentials:'include',
         })
         if(response.ok){
             alert('This post is editted !')

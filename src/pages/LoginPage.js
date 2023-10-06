@@ -22,7 +22,7 @@ const LoginPage = () => {
       method:'POST',
       body:JSON.stringify({username,password}),
       headers:{'Content-Type':'application/json'},
-      // credentials:'include', //we need to include crederntials in the headers to allow it cookies to be used anywhere in the app
+      credentials:'include', //we need to include crederntials in the headers to allow it cookies to be used anywhere in the app
     })
     if(response.ok){
       //if the login is successful we need to redirect it to home page i.e, '/'.

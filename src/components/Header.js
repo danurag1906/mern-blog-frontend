@@ -16,7 +16,7 @@ const Header = () => {
     fetch(`${base_url}/profile`,{
       //here credentials are grabbed from the browser and sent to the backend.
       //If backend responds ok , then here userInfo will be set and we can display particular user's data.
-      // credentials:'include',
+      credentials:'include',
     }).then(response=>{
       response.json().then(userInfo=>{
         setUserInfo(userInfo)

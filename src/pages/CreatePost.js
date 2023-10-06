@@ -44,7 +44,7 @@ const CreatePost = () => {
             method:'POST',
             body:data,
             // enctype:'multipart/form-data',
-            // credentials:'include',
+            credentials:'include',
         })
         if(response.ok){
 

@@ -26,7 +26,7 @@ const PostPage = () => {
         e.preventDefault();
         const response = await fetch(`${base_url}/post/` + id, {
             method: 'DELETE',
-            // credentials: 'include',
+            credentials: 'include',
         });
         if (response.ok) {
             // console.log("inside response ok");
